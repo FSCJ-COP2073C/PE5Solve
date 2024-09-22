@@ -7,11 +7,18 @@
 arg_matching <- data.frame(
   "Type" = c("Partial", "Positional", "Exact"),
   "Example" = c(
-    "matrix(data = 1:9, nrow = 3, ncol = 3, 
-         dimnames = list(c('A', 'B', 'C'), c('D', 'E', 'F')))",
-    "matrix(1:9, 3, 3, FALSE, list(c('A', 'B', 'C'), c('D', 'E', 'F')))",
-    "matrix(data = 1:9, nrow = 3, ncol = 3, byrow = FALSE, 
-         dimnames = list(c('A', 'B', 'C'), c('D', 'E', 'F')))"
+    paste0(
+      "matrix(data = 1:9, nrow = 3, ncol = 3, ",
+      "dimnames = list(c('A', 'B', 'C'), c('D', 'E', 'F')))"
+    ),
+    paste0(
+      "matrix(1:9, 3, 3, FALSE, ",
+      "list(c('A', 'B', 'C'), c('D', 'E', 'F')))"
+    ),
+    paste0(
+      "matrix(data = 1:9, nrow = 3, ncol = 3, byrow = FALSE, ",
+      "dimnames = list(c('A', 'B', 'C'), c('D', 'E', 'F')))"
+    )
   )
 )
 
